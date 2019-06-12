@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js --exec babel-node --presets es2015,stage-2",
+    "start": "DEBUG=express:* nodemon index.js -w .",
     "test": "mocha"
   },
   "keywords": [],
@@ -15,7 +15,7 @@
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "express": "^4.15.3",
+    "express": "^4.17.1",
     "mocha": "^3.5.0",
     "nodemon": "^1.11.0",
     "supertest": "^3.0.0"
